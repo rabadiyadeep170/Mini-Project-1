@@ -1,0 +1,771 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CR Developer</title>
+    <link rel="stylesheet" href="/Static/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel='icon' href='/Favikon/d1.png' type='image/x-icon' sizes="20x20"/>
+
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <script src="\bootstrap-5.3.2-dist\js\bootstrap.bundle.js"></script>
+</head>
+<script>
+   function reload(){
+      location.reload();
+   };
+
+   let counts1 = setInterval(updated1); 
+        let upto1 = 0;
+        function updated1() {
+            let count1 = document.getElementById("counter1");
+            count1.innerHTML = ++upto1;
+            if (upto1 === 1200) {
+                clearInterval(counts1);
+            }
+        }
+
+        let counts2 = setInterval(updated2);
+        let upto2 = 0;
+        function updated2() {
+            let count2 = document.getElementById("counter2");
+            count2.innerHTML = ++upto2;
+            if (upto2 === 2100) {
+                clearInterval(counts2);
+            }
+        }
+
+        let counts3 = setInterval(updated3);
+        let upto3 = 0;
+        function updated3() {
+            let count3 = document.getElementById("counter3");
+            count3.innerHTML = ++upto3;
+            if (upto3 === 5012) {
+                clearInterval(counts3);
+            }
+        }
+
+        let counts4 = setInterval(updated);
+        let upto4 = 0;
+        function updated() {
+            let count4 = document.getElementById("counter4");
+            count4.innerHTML = ++upto4;
+            if (upto4 === 3100) {
+                clearInterval(counts4);
+            }
+        }
+        function login(){
+         window.location.href = "\\loginPage\\F-Login.html";
+        }
+</script>
+<body>
+
+    <div class="front">
+        <nav class="navbar nav-all-page">
+            <div class="container mt-3">
+                  <p class="h3 text-light text-uppercase nav-hover" onclick="reload()">Creative Deep</p>
+                        <ul class="nav justify-content-center">
+      
+                            <li class="nav-item">
+                                <a class="nav-link text-light nav-hover" href="#A1">Event</a>
+                            </li>
+                            <li class="nav-item" id="#B1">
+                                <a class="nav-link text-light nav-hover" href="#B1">User-Servicee</a>
+                            </li>
+                            <li class="nav-item" id="#C1">
+                                <a class="nav-link text-light nav-hover" href="#C1">Event-Tickit</a>
+                            </li>
+                            <li class="nav-item" id="#D1">
+                                <a class="nav-link text-light nav-hover" href="#D1">Attend</a>
+                            </li>
+                        </ul>
+                        <button type="submit" class="btn btn-primary" onclick="login()"> Login Hear </button>
+            </div>
+        </nav>  
+                <hr class="hr text-light">
+                    <div class="container container1">
+                        <span class="border border-warning text-warning px-3 rounded-pill py-1 fs-6">Dec 14 - 12, 2023 | 21°31'N / 70°28'E</span>
+                        <br><br>
+                    </div>
+                    <div class="container py-9">
+                        <div class="row">
+                           <div class="col-lg-10 offset-lg-0">
+                                <div class="mt-6 mx-xl-6">
+                                    <h1 class="text-white-stable display-5 mb-3 text-light h1">Join the #1 conference for developers.</h1>
+                                    <p class="mb-0 lead px-xl-6 mx-xl-8 text-white-stable text-light text-center center-font-index">
+                                       Join us virtually for Block is the #1 conference for professional software developers.<br> Improving efficiency, security, and developer productivity.
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <br><br><br>
+                           <button class="btn btn-warning btn-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            Register
+                            </button>
+                           <button type="button" class="btn btn-outline-danger"> Add To Calender 
+                           </button>
+
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title text-light" id="offcanvasRightLabel">Event Registration</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                                <div class="offcanvas-body">
+                                    <P class="text-warning">Sign up for our free online event and get access to all the sessions, on-demand videos, and more.</P>
+                                    <form>
+                                        <label class="text-light p-space">Name *</label>
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <br>
+                                        <label class="text-light p-space">Job title *</label>
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <br>
+                                        <label class="text-light p-space">Company *</label>
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <br>
+                                        <label class="text-light p-space">Work email *</label>
+                                        <div class="mb-3">
+                                            <input type="email" class="form-control">
+                                        </div>
+                                        <br>
+                                        <label class="text-light p-space">Phone</label>
+                                        <div class="mb-3">
+                                            <input type="tel" class="form-control">
+                                        </div>
+                                        <br>
+                                        <label class="text-light p-space">Country *</label>
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <br>
+                                        <label class="text-light p-space">Which region are you based in? *</label>
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <br>
+                                        <div class="form-check text-light">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                *Yes please, I'd like Block and affiliates to use my information for personalized communications, targeted advertising and campaign effectiveness. See the Privacy Policy for more details.
+                                            </label>
+                                          </div>
+                                          <br>
+                                          <div class="d-grid gap-2">
+                                            <button class="btn btn-primary" type="button">Register</button>
+                                          </div>
+                                          <br>
+                                          <label class="text-light"> All fields marked with an asterisk (*) are required</label>
+                                    </form>
+                                </div>
+                            </div>
+                            <hr class="hr text-light">
+                            <video src="/index video/part3.mp4" class="object-fit-cover" autoplay loop muted></video>
+                            <div class="row row border-top border-bottom">
+                                <div class="col-md-4 border-end-md border-bottom border-bottom-md-0">
+                                   <div class="text-center p-5 px-xl-8 px-md-0" data-cue="zoomIn" data-show="true">
+                                      
+                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill text-light" viewBox="0 0 16 16">
+                                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"></path>
+                                         </svg>
+                                            <br>
+                                      <h5 class="text-light">Location</h5>
+                                      <p class="mb-0 text-warning">Ahmedabad hall 74 Grand Avenue South, Cambridge, ON</p>
+                                   </div>
+                                </div>
+                     
+                                <div class="col-md-4 border-end-md border-bottom border-bottom-md-0">
+                                   <div class="text-center p-5 px-xl-8 px-md-0" data-cue="zoomIn" data-show="true">
+                                    
+                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-window-dock text-light" viewBox="0 0 16 16">
+                                            <path d="M3.5 11a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm3.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm4.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z"></path>
+                                            <path d="M14 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h12ZM2 14h12a1 1 0 0 0 1-1V5H1v8a1 1 0 0 0 1 1ZM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2Z"></path>
+                                         </svg>
+                                         <br>
+                                      <h5 class="text-light">Date and time</h5>
+                                      <p class="mb-0 text-warning">Tuesday, June 20, 2024 6:00 PM - 10:00 PM EDT</p>
+                                   </div>
+                                </div>
+                                <div class="col-md-4">
+                                   <div class="text-center p-5 px-xl-8 px-md-0" data-cue="zoomIn" data-show="true">
+                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ticket-detailed-fill text-light" viewBox="0 0 16 16">
+                                            <path d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5V6a.5.5 0 0 1-.5.5 1.5 1.5 0 0 0 0 3 .5.5 0 0 1 .5.5v1.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 11.5V10a.5.5 0 0 1 .5-.5 1.5 1.5 0 1 0 0-3A.5.5 0 0 1 0 6V4.5Zm4 1a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5Zm0 5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5ZM4 8a1 1 0 0 0 1 1h6a1 1 0 1 0 0-2H5a1 1 0 0 0-1 1Z"></path>
+                                         </svg>
+                                         <br>
+                                      <h5 class="text-light">Admission</h5>
+                                      <p class="mb-0 text-warning">$79 per person Registration opens May 17, 2024</p>
+                                   </div>
+                                </div>
+                             </div>
+                        </div>
+            </div>
+   <div class="front" id="A1">
+      <div class="container">
+         <div class="row">
+           <div class="col-lg">
+               <p class="text-light h2 cont2-frnt2">Be a part of the first official #1 developer event.</p>
+               <br><br>
+               <p class="h5 text-light">Developer productivity significantly impacts software quality. Reduced productivity can leave room for bugs and technical errors that affect a product's quality.</p>
+               <br><br>
+               <li class="mb-3 d-flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill text-primary mt-1" viewBox="0 0 16 16">
+                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                  </svg>
+                  <div class="ms-3 text-warning">Attendance is free. Join the event from anywhere.</div>
+                </li>
+               <li class="mb-3 d-flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill text-primary mt-1" viewBox="0 0 16 16">
+                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                  </svg>
+                  <div class="ms-3 text-warning">Enjoy technical, code-driven sessions for developers.</div>
+               </li>
+               <li class="mb-3 d-flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill text-primary mt-1" viewBox="0 0 16 16">
+                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                  </svg>
+                  <div class="ms-3 text-warning">Join live Q&A in the events with industry experts.</div>
+               </li>
+           </div>
+            <div class="col-md">
+               <img src="/index-page-bg/ggCEO.jpg" alt="events" class="img-fluid rounded-3 gglCEO-img">
+            </div>
+
+            <div class="row g-5">
+               <div class="col-md-3 col-6" data-cue="slideInUp" data-show="true">
+                  <div class="text-center">
+                     <div class="d-flex justify-content-center">
+                        <h2 id="counter1" class="text-light"></h2>
+                     </div>
+                     <small class="text-light">Influential speakers</small>
+                  </div>
+               </div>
+               <div class="col-md-3 col-6" data-cue="slideInUp" data-show="true">
+                  <div class="text-center">
+                     <div class="d-flex justify-content-center">
+                        <h2 id="counter2" class="text-light"></h2>
+                     </div>
+                     <small class="text-light">Sessions (Live)</small>
+                  </div>
+               </div>
+               <div class="col-md-3 col-6" data-cue="slideInUp" data-show="true">
+                  <div class="text-center">
+                     <div class="d-flex justify-content-center">
+                        <h2 id="counter3" class="text-light"></h2>
+                     </div>
+                     <small class="text-light">Free Workshops</small>
+                  </div>
+               </div>
+               <div class="col-md-3 col-6" data-cue="slideInUp" data-show="true">
+                  <div class="text-center">
+                     <div class="d-flex justify-content-center">
+                        <h2 id="counter4" class="text-light"></h2>
+                     </div>
+                     <small class="text-light">Online User</small>
+                  </div>
+               </div>
+            </div>
+      </div>
+      <hr class="hr text-light">
+   </div>
+   <div class="front" id="B1">
+      <section class="py-xl-9 py-5 bg-gray-200" id="speaker">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6" data-cue="fadeIn" data-show="true" style="animation-name: fadeIn; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+                  <div class="mb-7 pb-2">
+                     <h2 class="mb-3 text-danger">User - Service</h2>
+                     <br>
+                     <p class="mb-0 lead text-light">Use the new service notification token issued in step 2 to send a subsequent service message, such as a reminder.</p>
+                  </div>
+               </div>
+            </div>
+            <br><br>
+            <div class="ag-format-container">
+               <div class="ag-courses_box">
+                 <div class="ag-courses_item">
+                   <a href="/Frount File/ios-Developer.html" class="ag-courses-item_link ag-courses-item_link1">
+                     <div class="ag-courses-item_bg"></div>
+             
+                     <div class="ag-courses-item_title">
+                        IOS Developer
+                     </div>
+             
+                     <div class="ag-courses-item_date-box">
+                       Ridham Khiraiya
+                       <span class="ag-courses-item_date ag-courses-item_link1">
+                         2k23
+                       </span>
+                     </div>
+                   </a>
+                 </div>
+             
+                 <div class="ag-courses_item">
+                   <a href="/Frount File/Graphics-deg.html" class="ag-courses-item_link ag-courses-item_link2">
+                     <div class="ag-courses-item_bg"></div>
+             
+                     <div class="ag-courses-item_title">
+                       Graphics Designer
+                     </div>
+             
+                     <div class="ag-courses-item_date-box">
+                       Nihir Sartanpara
+                       <span class="ag-courses-item_date ag-courses-item_link2">
+                         2k23
+                       </span>
+                     </div>
+                   </a>
+                 </div>
+             
+                 <div class="ag-courses_item">
+                   <a href="/Frount File/Ux-Ul.html" class="ag-courses-item_link ag-courses-item_link3">
+                     <div class="ag-courses-item_bg"></div>
+             
+                     <div class="ag-courses-item_title">
+                       UX / Ul Designer
+                     </div>
+             
+                     <div class="ag-courses-item_date-box">
+                       Nayan Aghera
+                       <span class="ag-courses-item_date ag-courses-item_link3">
+                         2k22
+                       </span>
+                     </div>
+                   </a>
+                 </div>
+             
+                 <div class="ag-courses_item">
+                   <a href="/Frount File/Back-End.html" class="ag-courses-item_link ag-courses-item_link4">
+                     <div class="ag-courses-item_bg"></div>
+             
+                     <div class="ag-courses-item_title">
+                       Back-End Developer
+                     </div>
+             
+                     <div class="ag-courses-item_date-box">
+                       Hitam Jakhaniya
+                       <span class="ag-courses-item_date ag-courses-item_link4">
+                         2k23
+                       </span>
+                     </div>
+                   </a>
+                 </div>
+             
+                 <div class="ag-courses_item">
+                   <a href="/Frount File/FullStack.html" class="ag-courses-item_link ag-courses-item_link5">
+                     <div class="ag-courses-item_bg"></div>
+             
+                     <div class="ag-courses-item_title">
+                       Full-Stack Developer
+                     </div>
+             
+                     <div class="ag-courses-item_date-box">
+                       Deep Rabadiya
+                       <span class="ag-courses-item_date ag-courses-item_link5">
+                         2k22
+                       </span>
+                     </div>
+                   </a>
+                 </div>
+             
+                 <div class="ag-courses_item">
+                   <a href="/Frount File/Front-End.html" class="ag-courses-item_link ag-courses-item_link6">
+                     <div class="ag-courses-item_bg"></div>
+             
+                     <div class="ag-courses-item_title">
+                       Front-end  Developer
+                     </div>
+                     <div class="ag-courses-item_date-box">
+                        Het Mehta
+                        <span class="ag-courses-item_date ag-courses-item_link6">
+                          2k22
+                        </span>
+                      </div>
+
+                   </a>
+                 </div>
+             
+               </div>
+             </div>
+            <div class="row" data-cue="fadeIn">
+               <div class="col-lg-12">
+                  <div class="mt-5">
+                     <a href="#!" class="btn btn-outline-success">Become a Speaker</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </div>
+   <div class="front" id="C1">
+      <div class="container">
+         <section class="py-xl-9 py-5 bg-gray-100">
+            <div class="container">
+               <div class="row" data-cue="fadeIn" data-show="true" style="animation-name: fadeIn; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+                  <div class="col-md-8 offset-md-2">
+                     <div class="text-center mb-xl-9 mb-5">
+                        <h2 class="mb-3 text-danger">Event tickets</h2>
+                        <p class="mb-0 lead px-xl-7 text-info">The price will increase as the conference approaches. Grab your ticket today. Number of tickets is limited.</p>
+                     </div>
+                  </div>
+               </div>
+               <!-- Pricing Style 3 -->
+               <div class="table-responsive-lg">
+                  <div class="row flex-nowrap me-5 me-lg-0">
+                     <div class="col-lg-4 col-md-6 col-12" data-cue="zoomIn" data-show="true" style="animation-name: zoomIn; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+                        <!--card-->
+                        <div class="card bg-gray-200 border-0 p-2 mb-5 mb-xl-0">
+                           <div class="card-body bg-white shadow rounded-2">
+                              <div class="mb-5">
+                                 <h3 class="h6 mb-3">All Access</h3>
+                                 <h2 class="d-flex align-items-center">
+                                    <span class="text-dark">$9.00*</span>
+                                    <del class="text-body-tertiary ms-1">$29</del>
+                                 </h2>
+                              </div>
+                              <div class="mb-5">
+                                 <span class="small">200 Seats Remaining</span>
+                                 <div class="progress mt-2" role="progressbar" aria-label="Event Ticket" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="height: 8px">
+                                    <div class="progress-bar bg-primary bg-opacity-50" style="width: 70%"></div>
+                                 </div>
+                              </div>
+
+                              <ul class="list-unstyled">
+                                 <li class="mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                                    </svg>
+                                    <span class="ms-3">Choose a layout</span>
+                                 </li>
+                                 <li class="mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                                    </svg>
+                                    <span class="ms-3">Contact available</span>
+                                 </li>
+                                 <li class="mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                                    </svg>
+                                    <span class="ms-3">Get a second opinion</span>
+                                 </li>
+                                 <li class="mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-x-circle-fill text-danger" viewBox="0 0 16 16">
+                                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"></path>
+                                    </svg>
+                                    <span class="ms-3">Keep your site up-to-date</span>
+                                 </li>
+                                 <li class="mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-x-circle-fill text-danger" viewBox="0 0 16 16">
+                                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"></path>
+                                    </svg>
+                                    <span class="ms-3">Make your website mobile-friendly </span>
+                                 </li>
+                                 <li class="mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-x-circle-fill text-danger" viewBox="0 0 16 16">
+                                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"></path>
+                                    </svg>
+                                    <span class="ms-3">Launch your website</span>
+                                 </li>
+                              </ul>
+                              <div class="d-grid mt-5">
+                                 <a href="#" class="btn btn-outline-primary">Register Now</a>
+                              </div>
+                           </div>
+                        </div>
+                        <!--card-->
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-12" data-cue="zoomIn" data-show="true" style="animation-name: zoomIn; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 200ms; animation-direction: normal; animation-fill-mode: both;">
+                        <!--card-->
+                        <div class="card bg-primary-subtle border-0 p-2 mb-5 mb-xl-0">
+                           <div class="card-body bg-white shadow rounded-2">
+                              <div class="mb-5">
+                                 <h3 class="h6 mb-3">VIP</h3>
+                                 <h2 class="d-flex align-items-center">
+                                    <span class="text-dark">$49.00*</span>
+                                    <del class="text-body-tertiary ms-1">$129</del>
+                                 </h2>
+                              </div>
+                              <div class="mb-5">
+                                 <span class="small">67 Seats Remaining</span>
+                                 <div class="progress mt-2" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="height: 8px">
+                                    <div class="progress-bar bg-primary bg-opacity-50" style="width: 90%"></div>
+                                 </div>
+                              </div>
+
+                              <ul class="list-unstyled">
+                                 <li class="mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                                    </svg>
+                                    <span class="ms-3">Choose a layout</span>
+                                 </li>
+                                 <li class="mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                                    </svg>
+                                    <span class="ms-3">Contact available</span>
+                                 </li>
+                                 <li class="mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                                    </svg>
+                                    <span class="ms-3">Get a second opinion</span>
+                                 </li>
+                                 <li class="mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                                    </svg>
+                                    <span class="ms-3">Keep your site up-to-date</span>
+                                 </li>
+                                 <li class="mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                                    </svg>
+                                    <span class="ms-3"> Make your website mobile-friendly</span>
+                                 </li>
+                                 <li class="mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-x-circle-fill text-danger" viewBox="0 0 16 16">
+                                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"></path>
+                                    </svg>
+                                    <span class="ms-3">Launch your website</span>
+                                 </li>
+                              </ul>
+                              <div class="d-grid mt-5">
+                                 <a href="#" class="btn btn-primary">Register</a>
+                              </div>
+                           </div>
+                        </div>
+                        <!--card-->
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-12" data-cue="zoomIn" data-show="true" style="animation-name: zoomIn; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 400ms; animation-direction: normal; animation-fill-mode: both;">
+                        <!--card-->
+                        <div class="card bg-gray-200 border-0 p-2 mb-xl-0">
+                           <div class="card-body bg-white shadow rounded-2">
+                              <div class="mb-5">
+                                 <h3 class="h6 mb-3">VIP + VIP Plus</h3>
+                                 <h2 class="d-flex align-items-center">
+                                    <span class="text-dark">$89.00*</span>
+                                    <del class="text-body-tertiary ms-1">$199</del>
+                                 </h2>
+                              </div>
+                              <div class="mb-5">
+                                 <span class="small">234 Seats Remaining</span>
+                                 <div class="progress mt-2" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="height: 8px">
+                                    <div class="progress-bar bg-primary bg-opacity-50" style="width: 70%"></div>
+                                 </div>
+                              </div>
+
+                              <ul class="list-unstyled">
+                                 <li class="mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                                    </svg>
+                                    <span class="ms-3"> Choose a layout</span>
+                                 </li>
+                                 <li class="mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                                    </svg>
+                                    <span class="ms-3">Contact available</span>
+                                 </li>
+                                 <li class="mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                                    </svg>
+                                    <span class="ms-3">Get a second opinion</span>
+                                 </li>
+                                 <li class="mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                                    </svg>
+                                    <span class="ms-3">Keep your site up-to-date</span>
+                                 </li>
+                                 <li class="mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                                    </svg>
+                                    <span class="ms-3">Make your website mobile-friendly</span>
+                                 </li>
+                                 <li class="mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                                    </svg>
+                                    <span class="ms-3">Launch your website</span>
+                                 </li>
+                              </ul>
+                              <div class="d-grid mt-5">
+                                 <a href="#" class="btn btn-outline-primary">Get the VIP plus tickets</a>
+                              </div>
+                           </div>
+                        </div>
+                        <!--card-->
+                     </div>
+                  </div>
+               </div>
+               <div class="row" data-cue="fadeIn" data-show="true" style="animation-name: fadeIn; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+                  <div class="col-md-12">
+                     <div class="text-center mt-5">
+                        <small class="text-light">* Additional 5% VAT charge applies to individuals, companies VAT non-payers, and companies in the country.</small>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+       </div>
+   </div>
+   <div class="front" id="D1">
+      <section class="my-lg-7 py-5">
+         <div class="container" data-cue="fadeIn" data-show="true" style="animation-name: fadeIn; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+            <div class="row bg-pattern bg-primary-gradient rounded-3 py-lg-7 py-5 g-0">
+               <div class="col-md-8 offset-md-2">
+                  <div class="text-center position-relative z-1 px-5" data-cue="zoomIn" data-show="true" style="animation-name: zoomIn; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+                     <div class="mb-5">
+                        <h3 class="h2 text-white-stable mb-3 text-light">Ready to attend?</h3>
+                        <p class="mb-0 text-white-stable text-light">
+                           Ready to join our block community of business leaders for four days of virtual sessions on driving developer happiness and boosting productivity?
+                        </p>
+                     </div>
+
+                     <a href="#" class="btn btn-dark">Register Now</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <br><br><br><br><br><br><br>
+      <div class="container">
+         <!-- Footer 4 column -->
+         <div class="row">
+            <div class="col-xxl-5 col-lg-5 col-md-7">
+               <div class="mb-7 mb-xl-0">
+                  <div class="mb-4">
+                  </div>
+                  <p class="mb-5 text-light">Build faster websites with Block multipurpose bootstrap 5 template. Duis imper diet mollis leo, quis ultrices erat ultrices simple dummy .</p>
+
+                  <form class="needs-validation" novalidate="">
+                     <h5 class="mb-3 text-success">Subscribe to our newsletter</h5>
+                     <div class="row g-2">
+                        <div class="col-lg-9 col-8">
+                           <label for="subscribeEmail" class="visually-hidden">Email</label>
+                           <input type="email" class="form-control frm-cntrl" id="subscribeEmail" placeholder="Email Address :" required="">
+                           <div class="invalid-feedback">Please enter email.</div>
+                        </div>
+                        <div class="col-lg-3 col-4">
+                           <div>
+                              <button type="submit" class="btn btn-primary">Subscribe</button>
+                           </div>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+            <div class="offset-xxl-1 col-xxl-6 col-lg-6 offset-md-1 col-md-4">
+               <div class="row" id="ft-links">
+                  <div class="col-lg-4 col-12">
+                     <div class="position-relative">
+                        <div class="mb-3 pb-2 d-flex justify-content-between border-bottom border-bottom-lg-0 text-danger">
+                           <h5>Landings</h5>
+                           <a class="d-block d-lg-none stretched-link text-inherit" data-bs-toggle="collapse" href="#collapseLanding" role="button" aria-expanded="false" aria-controls="collapseLanding">
+                              <i class="bi bi-chevron-down"></i>
+                           </a>
+                        </div>
+                        <div class="collapse d-lg-block" id="collapseLanding" data-bs-parent="#ft-links">
+                           <ul class="list-unstyled mb-0 py-3 py-lg-0">
+                              <li class="mb-2">
+                                 <a href="./index.html" class="text-decoration-none text-light">Saas</a>
+                              </li>
+                              <li class="mb-2">
+                                 <a href="#!" class="text-decoration-none text-light">Software Company</a>
+                              </li>
+                              <li class="mb-2">
+                                 <a href="./landing-finance.html" class="text-decoration-none text-light">Finance</a>
+                              </li>
+                              <li class="mb-2">
+                                 <a href="./landing-jamstack-agancy.html" class="text-decoration-none text-light">Digital Agency</a>
+                              </li>
+                              <li class="mb-2">
+                                 <a href="./landing-conference.html" class="text-decoration-none text-light">Conference</a>
+                              </li>
+                              <li class="mb-2">
+                                 <a href="#!" class="text-decoration-none text-light">App Template</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-12">
+                     <div class="mb-3 pb-2 d-flex justify-content-between border-bottom border-bottom-lg-0 position-relative text-danger">
+                        <h5>Accounts</h5>
+                        <a class="d-block d-lg-none stretched-link text-inherit" data-bs-toggle="collapse" href="#collapseAccounts" role="button" aria-expanded="false" aria-controls="collapseAccounts">
+                           <i class="bi bi-chevron-down"></i>
+                        </a>
+                     </div>
+                     <div class="collapse d-lg-block" id="collapseAccounts" data-bs-parent="#ft-links">
+                        <ul class="list-unstyled mb-0 py-3 py-lg-0">
+                           <li class="mb-2">
+                              <a href="./signup.html" class="text-decoration-none text-light">Register</a>
+                           </li>
+                           <li class="mb-2">
+                              <a href="./signin.html" class="text-decoration-none text-light">Login</a>
+                           </li>
+                           <li class="mb-2">
+                              <a href="./forget-password.html" class="text-decoration-none text-light">Forgot Password</a>
+                           </li>
+                           <li class="mb-2">
+                              <a href="./reset-password.html" class="text-decoration-none text-light">Reset Password</a>
+                           </li>
+                           <li class="mb-2">
+                              <a href="#!" class="text-decoration-none text-light">Profile</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-12">
+                     <div class="mb-3 pb-2 d-flex justify-content-between border-bottom border-bottom-lg-0 position-relative text-danger">
+                        <h5>Resources</h5>
+                        <a class="d-block d-lg-none stretched-link text-inherit" data-bs-toggle="collapse" href="#collapseResources" role="button" aria-expanded="false" aria-controls="collapseResources">
+                           <i class="bi bi-chevron-down"></i>
+                        </a>
+                     </div>
+                     <div class="collapse d-lg-block" id="collapseResources" data-bs-parent="#ft-links">
+                        <ul class="list-unstyled mb-0 py-3 py-lg-0">
+                           <li class="mb-2">
+                              <a href="./docs/index.html" class="text-decoration-none text-light">Docs</a>
+                           </li>
+                           <li class="mb-2">
+                              <a href="#!" class="text-decoration-none text-light">Support</a>
+                           </li>
+                           <li class="mb-2">
+                              <a href="./changelog.html" class="text-decoration-none text-light">Changelog</a>
+                           </li>
+                           <li class="mb-2">
+                              <a href="#!" class="text-decoration-none text-light">Help Center</a>
+                           </li>
+                           <li class="mb-2">
+                              <a href="#!" class="text-decoration-none text-light">Community</a>
+                           </li>
+                           <li class="mb-2">
+                              <a href="#!" class="text-decoration-none text-light">Webinars</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="small mb-3 mb-md-0 text-light text-center">
+               <hr class="hr"><br><br>
+               Copyright © 2023 notice should also include the author's name and the name of the website. It can also include the name of an organization, business, or corporate name. The notice should also include a current year or year range and a statement of ownership, by Creativr Deep
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>
